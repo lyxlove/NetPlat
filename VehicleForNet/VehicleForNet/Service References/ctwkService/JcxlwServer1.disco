@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://172.1.14.173:8040/Jcxlw/JcxlwServer.asmx?wsdl" docRef="http://172.1.14.173:8040/Jcxlw/JcxlwServer.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://172.1.14.173:8040/Jcxlw/JcxlwServer.asmx" xmlns:q1="http://ctkjwebservice.org/" binding="q1:JcxlwServerSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://172.1.14.173:8040/Jcxlw/JcxlwServer.asmx" xmlns:q2="http://ctkjwebservice.org/" binding="q2:JcxlwServerSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

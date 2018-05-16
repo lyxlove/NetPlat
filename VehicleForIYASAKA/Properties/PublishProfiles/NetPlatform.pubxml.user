@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Guofeng\Desktop\NetPlatForm</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ConvertInfo.dll">
+      <publishTime>12/27/2017 13:01:42</publishTime>
+    </File>
+    <File Include="bin/gfVehicleLibrary.dll">
+      <publishTime>11/17/2017 16:50:06</publishTime>
+    </File>
+    <File Include="bin/gfVehicleLibraryAJ.dll">
+      <publishTime>12/27/2017 13:01:42</publishTime>
+    </File>
+    <File Include="bin/gfVehicleLibraryPF.dll">
+      <publishTime>12/24/2017 18:12:34</publishTime>
+    </File>
+    <File Include="bin/LogHelper.dll">
+      <publishTime>12/25/2017 19:32:43</publishTime>
+    </File>
+    <File Include="bin/ProcessManage.dll">
+      <publishTime>12/27/2017 13:01:42</publishTime>
+    </File>
+    <File Include="bin/VehicleForIYASAKA.dll">
+      <publishTime>12/27/2017 13:02:10</publishTime>
+    </File>
+    <File Include="bin/VehicleForNetSocket.dll">
+      <publishTime>12/27/2017 08:45:10</publishTime>
+    </File>
+    <File Include="bin/VehicleForNetWebService.dll">
+      <publishTime>12/27/2017 13:01:42</publishTime>
+    </File>
+    <File Include="bin/VehicleNetBase.dll">
+      <publishTime>12/27/2017 13:01:42</publishTime>
+    </File>
+    <File Include="VehicleForIYASAKAService.asmx">
+      <publishTime>11/10/2017 16:57:05</publishTime>
+    </File>
+    <File Include="VehicleForIYASAKAService_AJ.asmx">
+      <publishTime>12/24/2017 17:18:11</publishTime>
+    </File>
+    <File Include="VehicleForIYASAKAService_PF.asmx">
+      <publishTime>12/24/2017 17:18:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/25/2017 15:02:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

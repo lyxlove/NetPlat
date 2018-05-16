@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <connectionString>
+    <item isused="1" value="data source=172.18.29.58;initial catalog=IVS30;persist security info=True;user id=sa;password=BJXY1234.; MultipleActiveResultSets=true;"></item>
+    <item isused="0" value="data source=17.;initial catalog=IVS30;persist security info=True;user id=sa;password=; MultipleActiveResultSets=true;"></item>
+    <item isused="0" value="data source=zch49web07;initial catalog=;persist security info=True;user id=sa;password=;MultipleActiveResultSets=true;"></item>
+    <item isused="0" value="Server = RJMV43-01\MOTORMSVR2;Database = ;Trusted_Connection = True;"></item>
+  </connectionString>
+  <Socket>
+	  <item isused="1" IPAddress="192.168.1.115" Port="8082"/>
+	  <item isused="0" IPAddress="192.168.1.115" Port="8082"/>
+	  <item isused="0" IPAddress="192.168.1.115" Port="8082"/>
+  </Socket>
+  <AJXLH>
+    <item isused="1" XLH="CF06263DBF3A432E45ACD71EF2BE8ACC" />
+    <item isused="0" IPAddress="192.168.1.115" Port="8082"/>
+    <item isused="0" IPAddress="192.168.1.115" Port="8082"/>
+  </AJXLH>
+  <Config>
+    <item isused="1" value=""></item>
+  </Config>
+</root>

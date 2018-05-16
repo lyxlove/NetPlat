@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="writeObjectOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xtlb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkxlh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="writeObjectOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="writeObjectOutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="queryObjectOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xtlb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkxlh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="queryObjectOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="queryObjectOutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="URLEncode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xtlb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkxlh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="URLEncodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="URLEncodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="URLDecode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xtlb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jkxlh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="URLDecodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="URLDecodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="writeObjectOutSoapIn">
+    <wsdl:part name="parameters" element="tns:writeObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="writeObjectOutSoapOut">
+    <wsdl:part name="parameters" element="tns:writeObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryObjectOutSoapIn">
+    <wsdl:part name="parameters" element="tns:queryObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="queryObjectOutSoapOut">
+    <wsdl:part name="parameters" element="tns:queryObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="URLEncodeSoapIn">
+    <wsdl:part name="parameters" element="tns:URLEncode" />
+  </wsdl:message>
+  <wsdl:message name="URLEncodeSoapOut">
+    <wsdl:part name="parameters" element="tns:URLEncodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="URLDecodeSoapIn">
+    <wsdl:part name="parameters" element="tns:URLDecode" />
+  </wsdl:message>
+  <wsdl:message name="URLDecodeSoapOut">
+    <wsdl:part name="parameters" element="tns:URLDecodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TmriOutAccessSoap">
+    <wsdl:operation name="writeObjectOut">
+      <wsdl:input message="tns:writeObjectOutSoapIn" />
+      <wsdl:output message="tns:writeObjectOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="queryObjectOut">
+      <wsdl:input message="tns:queryObjectOutSoapIn" />
+      <wsdl:output message="tns:queryObjectOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="URLEncode">
+      <wsdl:input message="tns:URLEncodeSoapIn" />
+      <wsdl:output message="tns:URLEncodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="URLDecode">
+      <wsdl:input message="tns:URLDecodeSoapIn" />
+      <wsdl:output message="tns:URLDecodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TmriOutAccessSoap" type="tns:TmriOutAccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="writeObjectOut">
+      <soap:operation soapAction="http://tempuri.org/writeObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryObjectOut">
+      <soap:operation soapAction="http://tempuri.org/queryObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="URLEncode">
+      <soap:operation soapAction="http://tempuri.org/URLEncode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="URLDecode">
+      <soap:operation soapAction="http://tempuri.org/URLDecode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TmriOutAccessSoap12" type="tns:TmriOutAccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="writeObjectOut">
+      <soap12:operation soapAction="http://tempuri.org/writeObjectOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryObjectOut">
+      <soap12:operation soapAction="http://tempuri.org/queryObjectOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="URLEncode">
+      <soap12:operation soapAction="http://tempuri.org/URLEncode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="URLDecode">
+      <soap12:operation soapAction="http://tempuri.org/URLDecode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TmriOutAccess">
+    <wsdl:port name="TmriOutAccessSoap" binding="tns:TmriOutAccessSoap">
+      <soap:address location="http://192.168.0.200/trffweb/Services/TmriOutAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TmriOutAccessSoap12" binding="tns:TmriOutAccessSoap12">
+      <soap12:address location="http://192.168.0.200/trffweb/Services/TmriOutAccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

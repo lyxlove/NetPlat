@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/gfVehicleLibrary
+/VehicleForIYASAKA/bin
+*.cache
+*.suo
+*.suo
+IYASAKANetPlatform/IYASAKANetPlatform.v12.suo
+*.dll
+*.pdb
+*.txt
+*.csproj
+*.suo
+*.config
+*.csproj
